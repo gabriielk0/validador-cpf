@@ -8,6 +8,42 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    
+    <header>
+        <li class="header__list">
+            <ol class="header__list-item">
+                <a>Home</a>
+            </ol>
+            <ol class="header__list-item">
+                <a>Como funciona</a>
+            </ol>
+        </li>
+    </header>
+    <main class="principal">
+        <h1 class="titulo__validador">Validador de CPF</h1>
+        <h2 class="subtitulo__validador">Coloque os 9 primeiros digitos e veja se o CPF é válido</h2>
+        <section class="validador__principal">
+            <input type="number" class="validador__input" id="um">
+            <input type="number" class="validador__input" id="dois">
+            <input type="number" class="validador__input" id="tres">
+            <p class="simbolo__texto">.</p>
+            <input type="number" class="validador__input" id="quatro">
+            <input type="number" class="validador__input" id="cinco">
+            <input type="number" class="validador__input" id="seis">
+            <p class="simbolo__texto">.</p>
+            <input type="number" class="validador__input" id="sete">
+            <input type="number" class="validador__input" id="oito">
+            <input type="number" class="validador__input" id="nove">
+            <p class="simbolo__texto">-</p>
+            <input type="number" class="validador__input" id="validador-um" disabled>
+            <input type="number" class="validador__input" id="validador-dois" disabled>
+        </section>
+        <div class="start__botao">
+            <button type="submit" class="botao">Validar</button>
+        </div>
+        <hr>
+    </main>
+    <footer class="rodape">
+        <p>Gabriel</p>
+    </footer>
 </body>
 </html>
