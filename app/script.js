@@ -6,10 +6,10 @@ function limitarDigito(input) {
 
 const todosInput = document.querySelectorAll('#input').value
 
-function inputs() {
-    todosInput.forEach(element => {
-        console.log(element.value)
-    });
-}
+let teste = [];
 
-inputs()
+teste = todosInput.forEach(element => {
+    console.log(teste)
+});
+
+
