@@ -6,8 +6,10 @@
     <title>Validador CPF</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
+    <script src="./app/script.js" defer></script>
 </head>
 <body>
+    
     <header>
         <li class="header__list">
             <ol class="header__list-item">
@@ -22,23 +24,23 @@
         <h1 class="titulo__validador">Validador de CPF</h1>
         <h2 class="subtitulo__validador">Coloque os 9 primeiros digitos e veja se o CPF é válido</h2>
         <section class="validador__principal">
-            <input type="number" class="validador__input" id="um">
-            <input type="number" class="validador__input" id="dois">
-            <input type="number" class="validador__input" id="tres">
+            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
             <p class="simbolo__texto">.</p>
-            <input type="number" class="validador__input" id="quatro">
-            <input type="number" class="validador__input" id="cinco">
-            <input type="number" class="validador__input" id="seis">
+            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
             <p class="simbolo__texto">.</p>
-            <input type="number" class="validador__input" id="sete">
-            <input type="number" class="validador__input" id="oito">
-            <input type="number" class="validador__input" id="nove">
+            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
             <p class="simbolo__texto">-</p>
-            <input type="number" class="validador__input" id="validador-um" disabled>
-            <input type="number" class="validador__input" id="validador-dois" disabled>
+            <input type="number" class="validador__input" id="validador-um" readonly>
+            <input type="number" class="validador__input" id="validador-dois" readonly>
         </section>
         <div class="start__botao">
-            <button type="submit" class="botao">Validar</button>
+            <button type="submit" class="botao" id="botao">Validar</button>
         </div>
         <hr>
     </main>
@@ -46,4 +48,5 @@
         <p>Gabriel</p>
     </footer>
 </body>
+
 </html>
