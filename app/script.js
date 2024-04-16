@@ -53,7 +53,7 @@ botao.addEventListener('click', () => {
 
 
 
-//Essa função faz multiplica os 9 digitos do CPF pelo algoritmo do primeiro validador
+//Essa função multiplica os 9 digitos do CPF pelo algoritmo do primeiro validador
 
 function calculoA(valores) {
     let resultadoACalculo = 0;
@@ -82,6 +82,8 @@ function validadorA(resultadoCalculoA) {
     return resultadoA;
 }
 
+//Essa função multiplica os 9 digitos e o primeiro validador do CPF pelo algoritmo do Segundo validador
+
 function calculoB(valores) {
     let resultadoBCalculo = 0;
     for (let i = 0; i < valores.length; i++) {
@@ -91,6 +93,8 @@ function calculoB(valores) {
     return resultadoBCalculo;
 }
 
+// Essa função divide o resultado da multiplicação por 11 e após é feito o calculo 11 menos o resto
+// Também filtra caso o resto seja menor que 2
 
 function validadorB(resultadoCalculoB) {
     let resultadoB = 0
