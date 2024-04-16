@@ -8,9 +8,15 @@ resetar.addEventListener('click', () => {
         input.value = '';
     })
 
-    const validadores = document.querySelectorAll('.validadores');
+    // const validadores = document.querySelectorAll('.validadores');
 
-    validadores.forEach(function(input) {
-        input.value = '';
-    })
+    // validadores.forEach(function(input) {
+    //     input.value = '';
+
+    const validadorA = document.getElementById('validador-um');
+    const validadorB = document.getElementById('validador-dois');
+
+    validadorA.setAttribute('value', '');
+    validadorB.setAttribute('value', '');
+    
 });
