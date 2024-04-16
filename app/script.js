@@ -1,4 +1,4 @@
-const botao = document.getElementById('botao');
+const botao = document.getElementById('botao-validar');
 
 botao.addEventListener('click', () => {
     const inputs = document.querySelectorAll('#input');
@@ -30,26 +30,25 @@ botao.addEventListener('click', () => {
 
     console.log(numericoA)
 
+   
+
+    // Segundo Validador
     const calculoB2 = calculoB(valores)
 
     const valorA = parseInt(numericoA.value) * 2;
 
     const resultadoCalculoB = calculoB2 + valorA;
-    
-    console.log(resultadoFinalA)
-    console.log(resultadoCalculoB)
-    console.log(valorA)
-    // Segundo Validador
+
 
     const resultadoFinalB = validadorB(resultadoCalculoB);
     const numericoB = document.getElementById('validador-dois');
 
     numericoB.setAttribute('value', resultadoFinalB);
+
     console.log(resultadoFinalB);
     console.log(numericoB);
 
 });
-
 
 
 
