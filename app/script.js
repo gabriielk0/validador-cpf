@@ -1,11 +1,3 @@
-
-
-function limitarDigito(input) {
-    if(input.value.length > 1) {
-        input.value = input.value.slice(0, 1);
-    }
-}
-
 const botao = document.getElementById('botao');
 
 botao.addEventListener('click', () => {
@@ -16,28 +8,35 @@ botao.addEventListener('click', () => {
         valores.push(input.value);
     });
 
-    if (valores.length === 9) {
-        console.log(valores);
-    }
+    const resultadoCalculoA = calculoA(valores);
 
-    const primeiroResultado = primeiroCalculo(valores);
+    //apenas para consulta
+    console.log(valores)
+    console.log(resultadoCalculoA[resultadoCalculoA.length - 1]);
 
-    console.log(primeiroResultado[primeiroResultado.length - 1]);
-
+    // Define uma variavel para cada indice
     const n = [];
     for (let i = 0; i < 9; i++) {
         n[i] = valores[i];
     }
-    const resultadoFinalPrimeira = definindoOPrimeiro(primeiroResultado)
-    console.log(resultadoFinalPrimeira);
-    const primeiroNumerico = document.getElementById('validador-um')
 
-    primeiroNumerico.setAttribute('value', resultadoFinalPrimeira)
+    // Finaliza os calculos e imprime na tela
 
-    console.log(primeiroNumerico)
+    // Primeiro Validador
+    const resultadoFinalA = validadorA(resultadoCalculoA)
+    console.log(resultadoFinalA);
+    const numericoA = document.getElementById('validador-um')
+
+    numericoA.setAttribute('value', resultadoFinalA)
+
+    console.log(numericoA)
 });
 
-function primeiroCalculo(valores) {
+
+
+//Essa função faz multiplica os 9 digitos do CPF pelo algoritmo do primeiro validador
+
+function calculoA(valores) {
     let resultadoPrimeiroCalculo = 0;
     for (let i = 0; i < valores.length; i++) {
         resultadoPrimeiroCalculo += valores[i] * (10 - i);
@@ -47,16 +46,20 @@ function primeiroCalculo(valores) {
     return [resultadoPrimeiroCalculo];
 }
 
-function definindoOPrimeiro(primeiroResultado) {
-    let resultadoPrimeiro = 0
-    let definindoPrimeiro = primeiroResultado%11
+
+// Essa função divide o resultado da multiplicação por 11 e após é feito o calculo 11 menos o resto
+// Também filtra caso o resto seja menor que 2
+
+function validadorA(resultadoCalculoA) {
+    let resultadoA = 0
+    let definindoA = resultadoCalculoA%11
  
-    if(definindoPrimeiro < 2) {
-        resultadoPrimeiro = 0
+    if(definindoA < 2) {
+        resultadoA = 0
     } else {
-        resultadoPrimeiro = 11 - definindoPrimeiro
+        resultadoA = 11 - definindoA
     }
 
-    return resultadoPrimeiro;
+    return resultadoA;
 }
 

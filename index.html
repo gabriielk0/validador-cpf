@@ -6,44 +6,38 @@
     <title>Validador CPF</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
-    <script src="./app/script.js" defer></script>
-    <script src="./app/primeiroCalculo.js" type="module" defer></script>
+    <script src="./app/script.js" type="module" defer></script>
+    <script src="./app/limitador.js" defer></script>
 </head>
 <body>
-    
-    <header>
-        <li class="header__list">
-            <ol class="header__list-item">
-                <a>Home</a>
-            </ol>
-            <ol class="header__list-item">
-                <a>Como funciona</a>
-            </ol>
-        </li>
-    </header>
     <main class="principal">
-        <h1 class="titulo__validador">Validador de CPF</h1>
-        <h2 class="subtitulo__validador">Coloque os 9 primeiros digitos e veja se o CPF é válido</h2>
-        <section class="validador__principal">
-            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-            <p class="simbolo__texto">.</p>
-            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-            <p class="simbolo__texto">.</p>
-            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-            <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-            <p class="simbolo__texto">-</p>
-            <input type="number" class="validador__input validadores" value="" id="validador-um" readonly>
-            <input type="number" class="validador__input validadores" value="" id="validador-dois" readonly>
+        <section>
+            <h1 class="titulo__validador">Validador de CPF</h1>
+            <h2 class="subtitulo__validador">Coloque os 9 primeiros digitos e veja se o CPF é válido</h2>
+            <section class="validador__principal">
+                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+                <p class="simbolo__texto">.</p>
+                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+                <p class="simbolo__texto">.</p>
+                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
+                <p class="simbolo__texto">-</p>
+                <input type="number" class="validador__input validadores" value="" id="validador-um" readonly>
+                <input type="number" class="validador__input validadores" value="" id="validador-dois" readonly>
+            </section>
+            <div class="start__botao">
+                <button type="submit" class="botao" id="botao">Validar</button>
+            </div>
         </section>
-        <div class="start__botao">
-            <button type="submit" class="botao" id="botao">Validar</button>
-        </div>
-        <hr>
+        <hr
+        <section>
+            <h2>Como Funciona</h2>
+        </section>
     </main>
     <footer class="rodape">
         <p>Gabriel</p>
