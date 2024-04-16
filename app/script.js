@@ -12,7 +12,7 @@ botao.addEventListener('click', () => {
 
     //apenas para consulta
     console.log(valores)
-    console.log(resultadoCalculoA[resultadoCalculoA.length - 1]);
+    console.log(resultadoCalculoA);
 
     // Define uma variavel para cada indice
     const n = [];
@@ -24,26 +24,46 @@ botao.addEventListener('click', () => {
 
     // Primeiro Validador
     const resultadoFinalA = validadorA(resultadoCalculoA)
-    console.log(resultadoFinalA);
     const numericoA = document.getElementById('validador-um')
 
     numericoA.setAttribute('value', resultadoFinalA)
 
     console.log(numericoA)
+
+    const calculoB2 = calculoB(valores)
+
+    const valorA = parseInt(numericoA.value) * 2;
+
+    const resultadoCalculoB = calculoB2 + valorA;
+    
+    console.log(resultadoFinalA)
+    console.log(resultadoCalculoB)
+    console.log(valorA)
+    // Segundo Validador
+
+    const resultadoFinalB = validadorB(resultadoCalculoB);
+    const numericoB = document.getElementById('validador-dois');
+
+    numericoB.setAttribute('value', resultadoFinalB);
+    console.log(resultadoFinalB);
+    console.log(numericoB);
+
 });
+
+
 
 
 
 //Essa função faz multiplica os 9 digitos do CPF pelo algoritmo do primeiro validador
 
 function calculoA(valores) {
-    let resultadoPrimeiroCalculo = 0;
+    let resultadoACalculo = 0;
     for (let i = 0; i < valores.length; i++) {
-        resultadoPrimeiroCalculo += valores[i] * (10 - i);
+        resultadoACalculo += valores[i] * (10 - i);
     }
 
 
-    return [resultadoPrimeiroCalculo];
+    return [resultadoACalculo];
 }
 
 
@@ -63,3 +83,25 @@ function validadorA(resultadoCalculoA) {
     return resultadoA;
 }
 
+function calculoB(valores) {
+    let resultadoBCalculo = 0;
+    for (let i = 0; i < valores.length; i++) {
+        resultadoBCalculo += valores[i] * (11 - i);
+    }
+
+    return resultadoBCalculo;
+}
+
+
+function validadorB(resultadoCalculoB) {
+    let resultadoB = 0
+    let definindoB = resultadoCalculoB%11
+ 
+    if(definindoB < 2) {
+        resultadoB = 0
+    } else {
+        resultadoB = 11 - definindoB
+    }
+
+    return resultadoB;
+}
