@@ -72,6 +72,11 @@ input[type=number] {
     border-radius: 20%;
 }
 
+.validadores{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
 .start__botao{
     display: flex;
     justify-content: center;

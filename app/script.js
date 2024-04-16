@@ -30,6 +30,11 @@ botao.addEventListener('click', () => {
     }
     const resultadoFinalPrimeira = definindoOPrimeiro(primeiroResultado)
     console.log(resultadoFinalPrimeira);
+    const primeiroNumerico = document.getElementById('validador-um')
+
+    primeiroNumerico.setAttribute('value', resultadoFinalPrimeira)
+
+    console.log(primeiroNumerico)
 });
 
 function primeiroCalculo(valores) {
