@@ -1,54 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Validador CPF</title>
-    <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
     <script src="./app/limitador.js" defer></script>
     <script src="./app/resetar.js" defer></script>
     <script src="./app/script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <main class="principal">
-        <section>
-            <h1 class="titulo__validador">Validador de CPF</h1>
-            <h2 class="subtitulo__validador">Coloque os 9 primeiros digitos e veja se o CPF é válido</h2>
-            <section class="validador__principal">
-                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-                <p class="simbolo__texto">.</p>
-                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-                <p class="simbolo__texto">.</p>
-                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-                <input type="number" class="validador__input" id="input" oninput="limitarDigito(this)">
-                <p class="simbolo__texto">-</p>
-                <input type="number" class="validador__input validadores" value="" id="validador-um" readonly>
-                <input type="number" class="validador__input validadores" value="" id="validador-dois" readonly>
-            </section>
-            <div class="start__botao">
-                <button type="submit" class="botao" id="botao-validar">Validar</button>
-                <button type="submit" class="botao" id="botao-resetar">Resetar</button>
-                
-            </div>
+      <section>
+        <h1 class="titulo__validador">Validador de CPF</h1>
+        <h2 class="subtitulo__validador">
+          Coloque os 9 primeiros digitos e veja se o CPF é válido
+        </h2>
+        <section class="validador__principal">
+          <input
+            type="number"
+            class="validador__input"
+            id="input"
+            oninput="limitarDigito(this)"
+          />
+          <input
+            type="number"
+            class="validador__input"
+            id="input"
+            oninput="limitarDigito(this)"
+          />
+          <input
+            type="number"
+            class="validador__input"
+            id="input"
+            oninput="limitarDigito(this)"
+          />
+          <p class="simbolo__texto">.</p>
+          <input
+            type="number"
+            class="validador__input"
+            id="input"
+            oninput="limitarDigito(this)"
+          />
+          <input
+            type="number"
+            class="validador__input"
+            id="input"
+            oninput="limitarDigito(this)"
+          />
+          <input
+            type="number"
+            class="validador__input"
+            id="input"
+            oninput="limitarDigito(this)"
+          />
+          <p class="simbolo__texto">.</p>
+          <input
+            type="number"
+            class="validador__input"
+            id="input"
+            oninput="limitarDigito(this)"
+          />
+          <input
+            type="number"
+            class="validador__input"
+            id="input"
+            oninput="limitarDigito(this)"
+          />
+          <input
+            type="number"
+            class="validador__input"
+            id="input"
+            oninput="limitarDigito(this)"
+          />
+          <p class="simbolo__texto">-</p>
+          <input
+            type="number"
+            class="validador__input validadores"
+            value=""
+            id="validador-um"
+            readonly
+          />
+          <input
+            type="number"
+            class="validador__input validadores"
+            value=""
+            id="validador-dois"
+            readonly
+          />
         </section>
-        <hr>
-        <section class="como_funciona">
-            <h2 class="subtitulo__secundario">Como Funciona</h2>
-            <p class="paragrafo__secundario">
-                Coloque os 9 primeiros digitos do CPF e após clicar no botão validar o algoritmo irá restonar os 2 ultimos digitos, 
-                caso os digitos seja igual aos digitos do CPF que você repassou, ele estará válido.
-            </p>
-        </section>
+        <div class="start__botao">
+          <button type="submit" class="botao" id="botao-validar">
+            Validar
+          </button>
+          <button type="submit" class="botao" id="botao-resetar">
+            Resetar
+          </button>
+        </div>
+      </section>
+      <hr />
+      <section class="como_funciona">
+        <h2 class="subtitulo__secundario">Como Funciona</h2>
+        <p class="paragrafo__secundario">
+          Coloque os 9 primeiros digitos do CPF e após clicar no botão validar o
+          algoritmo irá restonar os 2 ultimos digitos, caso os digitos seja
+          igual aos digitos do CPF que você repassou, ele estará válido.
+        </p>
+      </section>
     </main>
     <footer class="rodape">
-        <p> Desenvolvido por Gabriel Carvalho</p>
+      <p>Desenvolvido por Gabriel Carvalho</p>
     </footer>
-</body>
-
+  </body>
 </html>

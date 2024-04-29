@@ -16,7 +16,7 @@ body {
     font-family: var(--fonte-principal);
 }
 
-.header__list{
+.header__list {
     display: flex;
     color: var(--fonte-principal);
     font-size: 1.2rem;
@@ -25,26 +25,26 @@ body {
 }
 
 .header__list-item {
-    padding:0 1rem;
+    padding: 0 1rem;
 }
 
-.principal{
+.principal {
     margin-top: 3rem;
 }
 
-.titulo__validador{
+.titulo__validador {
     font-size: 2rem;
     text-align: center;
     font-weight: 800;
 }
 
-.subtitulo__validador{
+.subtitulo__validador {
     font-size: 1.5rem;
     text-align: center;
     margin: 2rem;
 }
 
-.validador__principal{
+.validador__principal {
     display: flex;
     flex-wrap: nowrap;
     gap: 20px;
@@ -54,41 +54,43 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.simbolo__texto{
+.simbolo__texto {
     font-size: 3.5em;
 }
-input[type=number]::-webkit-inner-spin-button { 
+
+input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    
+
 }
-input[type=number] { 
+
+input[type=number] {
     -moz-appearance: textfield;
     appearance: textfield;
     text-align: center;
 }
 
-.validador__input{
+.validador__input {
     width: 3rem;
     height: 3rem;
     font-size: 2em;
     border-radius: 20%;
 }
 
-.validadores{
+.validadores {
     font-size: 3rem;
     font-weight: 600;
     border: 3px solid black;
     background-color: lightgrey;
 }
 
-.start__botao{
+.start__botao {
     display: flex;
     justify-content: center;
     margin: 2rem;
     gap: 75px;
 }
 
-.botao{
+.botao {
     color: var(--cor-fonte-principal);
     background-color: var(--cor-secundaria);
     width: 150px;
@@ -99,12 +101,12 @@ input[type=number] {
     font-weight: 600;
 }
 
-.botao:hover{
+.botao:hover {
     background-color: var(--cor-secundaria-hover);
     color: white;
 }
 
-.rodape{
+.rodape {
     background-color: var(--cor-secundaria);
     text-align: center;
     padding: .3rem;
@@ -114,17 +116,17 @@ input[type=number] {
     width: 100%;
 }
 
-.como_funciona{
+.como_funciona {
     margin-top: 50px;
 }
 
-.subtitulo__secundario{
+.subtitulo__secundario {
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
 }
 
-.paragrafo__secundario{
+.paragrafo__secundario {
     font-size: 1.5rem;
     margin: 1.5rem;
 }
